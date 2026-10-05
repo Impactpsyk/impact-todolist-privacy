@@ -121,7 +121,11 @@ Where required by applicable law (including GDPR in the EEA), the app presents t
 <h3>Ad Placement</h3>
 
 <p>
-Ads appear only on passive browsing screens (Dashboard and Statistics). Ads do not appear during task creation, editing, Completed History, Calendar, Focus sessions, GPS selection, backup/restore, export, sync, or privacy consent flows. No interstitial or full-screen ads are used.
+Banner ads appear on passive browsing screens including the Dashboard, Tasks, Calendar, To Pay, Statistics, Completed History, Kanban, Search, Status, Activity, People, Groups, and Map screens. Banner ads do not appear during task creation, editing, Focus sessions, GPS selection, backup/restore, export, sync, donation, settings, or privacy consent flows.
+</p>
+
+<p>
+Additionally, the app may display up to one full-screen interstitial advertisement per calendar day. This interstitial appears only after a meaningful user action has successfully completed (such as completing a task, marking a payment complete, or stopping a focus session). The interstitial never appears at app startup, on navigation between screens, on app resume, on automatic timer expiry, or after file export. If no suitable opportunity arises, or if the ad is unavailable, no interstitial is shown that day.
 </p>
 
 <h2>Location Data</h2>
@@ -227,7 +231,7 @@ The app requests microphone permission when the user records a voice note for a 
 
 <ul>
 <li>Task and settings data is stored in a local SQLite database</li>
-<li>Sensitive values (device identity, sync pairing keys) are stored in secure device storage</li>
+<li>Sensitive values (device identity, sync pairing keys) are stored using a combination of secure device storage and the local database</li>
 <li>Wi-Fi sync uses AES-256-GCM authenticated encryption</li>
 <li>Release builds are signed with the official Impact Group certificate</li>
 </ul>
